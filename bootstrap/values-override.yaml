@@ -10,7 +10,7 @@ server:
       destination:
         namespace: argo-cd
         server: https://kubernetes.default.svc
-      project: argocd
+      project: gitops-bootstrap
       source:
         helm:
           version: v3
@@ -28,7 +28,7 @@ server:
       destination:
         namespace: argo-cd
         server: https://kubernetes.default.svc
-      project: argocd
+      project: gitops-bootstrap
       source:
         path: apps
         repoURL: https://github.com/kurtburak/argocd.git
@@ -41,7 +41,7 @@ server:
           selfHeal: true
           prune: true
   additionalProjects:
-    - name: argocd
+    - name: gitops-bootstrap
       namespace: argo-cd
       additionalLabels: {}
       additionalAnnotations: {}
