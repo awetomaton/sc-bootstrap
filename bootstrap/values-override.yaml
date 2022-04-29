@@ -6,9 +6,9 @@ server:
         url: https://github.com/awetomaton/sc-bootstrap.git
   additionalApplications:
     - name: argocd
-      namespace: argocd
+      namespace: argo-cd
       destination:
-        namespace: argocd
+        namespace: argo-cd
         server: https://kubernetes.default.svc
       project: argocd
       source:
@@ -24,9 +24,9 @@ server:
         syncOptions:
           - CreateNamespace=true
     - name: apps
-      namespace: argocd
+      namespace: argo-cd
       destination:
-        namespace: argocd
+        namespace: argo-cd
         server: https://kubernetes.default.svc
       project: argocd
       source:
@@ -42,14 +42,14 @@ server:
           prune: true
   additionalProjects:
     - name: argocd
-      namespace: argocd
+      namespace: argo-cd
       additionalLabels: {}
       additionalAnnotations: {}
       description: Argocd Project
       sourceRepos:
         - "*"
       destinations:
-        - namespace: argocd
+        - namespace: argo-cd
           server: https://kubernetes.default.svc
       clusterResourceWhitelist:
         - group: "*"
