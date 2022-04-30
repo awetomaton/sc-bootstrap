@@ -1,6 +1,0 @@
-server:
-  configEnabled: true
-  config:
-    repositories: |
-      - type: git
-        url: https://github.com/awetomaton/sc-bootstrap.git
