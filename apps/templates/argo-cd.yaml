@@ -14,7 +14,7 @@ spec:
     path: bootstrap/argo-cd
     repoURL: https://github.com/awetomaton/sc-bootstrap.git
     targetRevision: HEAD
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+  # syncPolicy:
+  #   automated:
+  #     prune: true
+  #     selfHeal: true
