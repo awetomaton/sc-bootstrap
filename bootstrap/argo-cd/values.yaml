@@ -696,6 +696,10 @@ server:
   ##          orgs:
   ##          - name: your-github-org
   config:
+    repositories: |
+      - type: git
+        url: https://github.com/awetomaton/sc-bootstrap.git
+
     ## Argo CD external base URL. Required when configuring SSO. Required when enabling dex.
     ## E.g:
     ## url: https://argocd.example.com
