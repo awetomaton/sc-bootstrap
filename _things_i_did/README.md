@@ -4,3 +4,4 @@
 4. argo-cd - set storageclass to 'aws-efs' (retrieve from `kubectl get storeageclass`)
 5. helm install of redis does not clean up persistentvolumeclaims, need to be deleted manually
 6. install worked. going to tear it down an configure it to have it be self-managed.
+7. added values-override.yaml - inspo: https://medium.com/devopsturkiye/self-managed-argo-cd-app-of-everything-a226eb100cf0

@@ -1,0 +1,2 @@
+global:
+  imageRegistry: "harbor.nasiccloud.io"
